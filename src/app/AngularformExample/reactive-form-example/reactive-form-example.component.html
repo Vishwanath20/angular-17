@@ -1,0 +1,95 @@
+<h2> Expample - Creating form using formGroup</h2>
+<form [formGroup]="profileForm" class="form-group container-fluid" (ngSubmit)="onSubmit()">
+
+    <label for="first-name">First Name: </label>
+    <input id="first-name" type="text" formControlName="firstName" class="form-control">
+  
+    <label for="last-name">Last Name: </label>
+    <input id="last-name" type="text" formControlName="lastName" class="form-control">
+  
+    <button class="btn btn-primary">
+        Submit
+    </button>
+  </form>
+
+  <h1>-----------------------------------------------------------------</h1>
+
+  <h2> Expample - Creating form using formGroup and formBuilder</h2>
+<form [formGroup]="profileForm2" class="form-group container-fluid" (ngSubmit)="onSubmit2()">
+
+    <label for="first-name">First Name: </label>
+    <input id="first-name" type="text" formControlName="firstName2" class="form-control">
+  
+    <label for="last-name">Last Name: </label>
+    <input id="last-name" type="text" formControlName="lastName2" class="form-control">
+  
+    <div formGroupName="address">
+        <h4>Address</h4>
+      
+        <label for="street">Street: </label>
+        <input id="street" type="text" formControlName="street" class="form-control">
+      
+        <label for="city">City: </label>
+        <input id="city" type="text" formControlName="city" class="form-control">
+      
+        <label for="state">State: </label>
+        <input id="state" type="text" formControlName="state" class="form-control">
+      
+        <label for="zip">Zip Code: </label>
+        <input id="zip" type="text" formControlName="zip" class="form-control">
+    </div>
+
+    <p>Form Status: {{ profileForm2.status }}</p> 
+
+    <button class="btn btn-primary">
+        Submit
+    </button>
+  </form>
+
+  <h1>-----------------------------------------------------------------</h1>
+  <h1>Creating dynamic forms using FormArray</h1>
+  <p>FormArray is an alternative to FormGroup for managing any number of unnamed controls. As with form group instances, you can dynamically insert and remove controls from form array instances</p>
+  <p>FormArray Example:</p>
+  <div>
+
+    <form [formGroup]="profileFormArray" class="form-group container-fluid" (ngSubmit)="onSubmit3()">
+
+        <label for="first-name">First Name: </label>
+        <input id="first-name" type="text" formControlName="firstName3" class="form-control">
+      
+        <label for="last-name">Last Name: </label>
+        <input id="last-name" type="text" formControlName="lastName3" class="form-control">
+      
+        <div formGroupName="address2">
+            <h4>Address</h4>
+          
+            <label for="street">Street: </label>
+            <input id="street" type="text" formControlName="street2" class="form-control">
+          
+            <label for="city">City: </label>
+            <input id="city" type="text" formControlName="city2" class="form-control">
+          
+            <label for="state">State: </label>
+            <input id="state" type="text" formControlName="state2" class="form-control">
+          
+            <label for="zip">Zip Code: </label>
+            <input id="zip" type="text" formControlName="zip2" class="form-control">
+        </div>
+    
+        <div formArrayName="aliases">
+            <h2>Aliases</h2>
+            <button class="btn btn-secondary" type="button" (click)="addAlias()">+ Add another alias</button>
+          
+            <div *ngFor="let alias of aliases.controls; let i=index">
+              <!-- The repeated alias template -->
+              <label for="alias-{{ i }}">Alias:</label>
+              <input id="alias-{{ i }}" type="text" [formControlName]="i">
+            </div>
+          </div>
+    
+        <button class="btn btn-primary">
+            Submit
+        </button>
+      </form>
+
+  </div>

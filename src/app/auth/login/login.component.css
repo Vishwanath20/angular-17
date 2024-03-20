@@ -1,0 +1,11 @@
+.container{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    top: 200px;
+}
+
+.main{
+    background-color: aqua;
+    height: 100%;
+}

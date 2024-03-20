@@ -1,0 +1,13 @@
+<h1> This is Parent Compoent</h1>
+
+<app-child [messageFromParent] ="messageForChild" (messageToParent)="receiveMessage($event)"></app-child>
+
+<!-- <app-child (messageEvent)="receiveMessage($event)"></app-child> -->
+
+<p>Child Componenet Says: {{ messageFromChild }}</p>
+
+
+<div>Data received from child using ViewChild is: {{ receivedData }}</div>
+
+<p>message from shareDataService: {{message}}</p>
+<button (click)="setData()">Set Data for sibling component</button>
