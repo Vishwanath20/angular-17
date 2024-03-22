@@ -8,6 +8,8 @@ import { TemplateDrivenFormExampleComponent } from './AngularformExample/templat
 import { ChildComponent } from './dataSharing/parent/child/child.component';
 import { ParentComponent } from './dataSharing/parent/parent.component';
 import { SiblingComponent } from './dataSharing/sibling/sibling.component';
+import { AdminComponent } from './admin/admin.component';
+import { AngularTestingComponent } from './angular-testing/angular-testing.component';
 
 export const routes: Routes = [];
 
@@ -50,6 +52,14 @@ export const routeConfig: Routes = [
     {
       path:'sibling-component',
       component:SiblingComponent
+    },
+    {
+      path:"admin",
+      component: AdminComponent
+    },
+    {
+      path:"angularTestingcomponent",
+      component: AngularTestingComponent
     }
   ];
   

@@ -8,6 +8,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ParentComponent } from './dataSharing/parent/parent.component';
+import { AngularTestingComponent } from './angular-testing/angular-testing.component';
 
 @Component({
   selector: 'app-root',
@@ -20,12 +21,13 @@ import { ParentComponent } from './dataSharing/parent/parent.component';
     DetailsComponent,
     HeaderComponent,
     CommonModule,
-    ParentComponent
+    ParentComponent,
+    AngularTestingComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   
 })
 export class AppComponent {
-  title = 'home';
+  title = 'Angular-17 Project';
 }
