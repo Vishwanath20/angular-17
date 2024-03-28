@@ -9,11 +9,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ParentComponent } from './dataSharing/parent/parent.component';
 import { AngularTestingComponent } from './angular-testing/angular-testing.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
+    HttpClientModule,
     RouterOutlet,
     ReactiveFormsModule,
     HomeComponent,

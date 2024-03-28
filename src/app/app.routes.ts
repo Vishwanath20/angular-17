@@ -10,6 +10,7 @@ import { ParentComponent } from './dataSharing/parent/parent.component';
 import { SiblingComponent } from './dataSharing/sibling/sibling.component';
 import { AdminComponent } from './admin/admin.component';
 import { AngularTestingComponent } from './angular-testing/angular-testing.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 export const routes: Routes = [];
 
@@ -60,6 +61,10 @@ export const routeConfig: Routes = [
     {
       path:"angularTestingcomponent",
       component: AngularTestingComponent
+    },
+    {
+      path:'pagination',
+      component:PaginationComponent
     }
   ];
   
