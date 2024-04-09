@@ -8,9 +8,8 @@ import { TemplateDrivenFormExampleComponent } from './AngularformExample/templat
 import { ChildComponent } from './dataSharing/parent/child/child.component';
 import { ParentComponent } from './dataSharing/parent/parent.component';
 import { SiblingComponent } from './dataSharing/sibling/sibling.component';
-import { AdminComponent } from './admin/admin.component';
-import { AngularTestingComponent } from './angular-testing/angular-testing.component';
-import { PaginationComponent } from './pagination/pagination.component';
+import { AdminComponent } from './admin/admin/admin.component';
+import { ReactiveFormExample2Component } from './AngularformExample/reactive-form-example-2/reactive-form-example-2.component';
 
 export const routes: Routes = [];
 
@@ -55,16 +54,12 @@ export const routeConfig: Routes = [
       component:SiblingComponent
     },
     {
-      path:"admin",
-      component: AdminComponent
+      path:'admin',
+      component:AdminComponent
     },
     {
-      path:"angularTestingcomponent",
-      component: AngularTestingComponent
-    },
-    {
-      path:'pagination',
-      component:PaginationComponent
+      path:'reactive-form-example-2',
+      component:ReactiveFormExample2Component
     }
   ];
   

@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 import { ParentComponent } from './dataSharing/parent/parent.component';
 import { AngularTestingComponent } from './angular-testing/angular-testing.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormExample2Component } from './AngularformExample/reactive-form-example-2/reactive-form-example-2.component';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     CommonModule,
     ParentComponent,
-    AngularTestingComponent
+    AngularTestingComponent,
+    ReactiveFormExample2Component
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

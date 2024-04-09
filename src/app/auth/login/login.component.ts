@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit{
   constructor(
     private formBuilder: FormBuilder,
     private router: Router
-  ) { }
+    ) { }
   
 
   ngOnInit(): void {
@@ -35,12 +35,11 @@ export class LoginComponent implements OnInit{
     if(this.loginForm.invalid){
       return;
     }
-    console.log(this.loginForm.value)
-
-    if( this.loginForm.value.email == "superadmin@admin.com" && this.loginForm.value.password == "super"){
-      console.log("----------Welcome Super Admin-----------");
-      localStorage.setItem('adminType', "superAdmin");
-      this.router.navigate(['/', 'admin'])
+    console.log(this.loginForm.value.email);
+    console.log(this.loginForm.value);
+    if(this.loginForm.value.email == "admin@admin.com" && this.loginForm.value.password == "admin"){
+      console.log("--------Welcome Admin-----------");
+      this.router.navigate(['/', 'admin']);
     }
   }
 }
