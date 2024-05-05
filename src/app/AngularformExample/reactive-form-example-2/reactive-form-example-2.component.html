@@ -3,6 +3,7 @@
 <div class="container">
   <h2>Enter Credit Card Number</h2>
   <form [formGroup]="creditCardForm" (ngSubmit)="onSubmit()">
+  <!-- <form [formGroup]="profileForm" class="form-group container-fluid" (ngSubmit)="onSubmit()"> -->
     <input type="text" formControlName="creditCardInput" placeholder="Enter 16-digit credit card number" maxlength="16" required>
     <input type="submit" value="Submit">
   </form>

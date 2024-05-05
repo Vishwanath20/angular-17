@@ -11,6 +11,8 @@ import { ParentComponent } from './dataSharing/parent/parent.component';
 import { AngularTestingComponent } from './angular-testing/angular-testing.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormExample2Component } from './AngularformExample/reactive-form-example-2/reactive-form-example-2.component';
+import { ImpurePipeComponent } from './impure-pipe/impure-pipe.component';
+import { LifeCycleHookComponent } from './life-cycle-hook/life-cycle-hook.component';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +28,9 @@ import { ReactiveFormExample2Component } from './AngularformExample/reactive-for
     CommonModule,
     ParentComponent,
     AngularTestingComponent,
-    ReactiveFormExample2Component
+    ReactiveFormExample2Component,
+    ImpurePipeComponent,
+    LifeCycleHookComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

@@ -10,6 +10,8 @@ import { ParentComponent } from './dataSharing/parent/parent.component';
 import { SiblingComponent } from './dataSharing/sibling/sibling.component';
 import { AdminComponent } from './admin/admin/admin.component';
 import { ReactiveFormExample2Component } from './AngularformExample/reactive-form-example-2/reactive-form-example-2.component';
+import { ImpurePipeComponent } from './impure-pipe/impure-pipe.component';
+import { LifeCycleHookComponent } from './life-cycle-hook/life-cycle-hook.component';
 
 export const routes: Routes = [];
 
@@ -60,6 +62,14 @@ export const routeConfig: Routes = [
     {
       path:'reactive-form-example-2',
       component:ReactiveFormExample2Component
+    },
+    {
+      path:'impurePipe',
+      component:ImpurePipeComponent
+    },
+    {
+      path:'angular-life-cycle-hooks',
+      component:LifeCycleHookComponent
     }
   ];
   

@@ -1,0 +1,12 @@
+
+
+<div class="container" style="background-color: aquamarine; height: 500px; width: 1000px;">
+    <p>Parent Component</p>
+    <input type="text" #inputData/> 
+    <button (click) ="changeData(inputData)">Change Data</button>
+    <app-child-component [dataFromParent]="parentData" *ngIf="destroy">
+        <h4>Content Projection Data - {{parentData}}</h4>
+    </app-child-component>
+    <br><br>
+    <button (click)="destroyComponent()">Destroy Child Compoment</button>
+</div>
