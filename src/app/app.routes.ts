@@ -12,6 +12,7 @@ import { AdminComponent } from './admin/admin/admin.component';
 import { ReactiveFormExample2Component } from './AngularformExample/reactive-form-example-2/reactive-form-example-2.component';
 import { ImpurePipeComponent } from './impure-pipe/impure-pipe.component';
 import { LifeCycleHookComponent } from './life-cycle-hook/life-cycle-hook.component';
+import { MyCounterComponentComponent } from './my-counter-component/my-counter-component.component';
 
 export const routes: Routes = [];
 
@@ -70,6 +71,10 @@ export const routeConfig: Routes = [
     {
       path:'angular-life-cycle-hooks',
       component:LifeCycleHookComponent
+    },
+    {
+      path:'ngrx-example',
+      component:MyCounterComponentComponent
     }
   ];
   

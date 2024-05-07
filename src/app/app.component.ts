@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormExample2Component } from './AngularformExample/reactive-form-example-2/reactive-form-example-2.component';
 import { ImpurePipeComponent } from './impure-pipe/impure-pipe.component';
 import { LifeCycleHookComponent } from './life-cycle-hook/life-cycle-hook.component';
+import { MyCounterComponentComponent } from './my-counter-component/my-counter-component.component';
 
 @Component({
   selector: 'app-root',
@@ -30,7 +31,8 @@ import { LifeCycleHookComponent } from './life-cycle-hook/life-cycle-hook.compon
     AngularTestingComponent,
     ReactiveFormExample2Component,
     ImpurePipeComponent,
-    LifeCycleHookComponent
+    LifeCycleHookComponent,
+    MyCounterComponentComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
