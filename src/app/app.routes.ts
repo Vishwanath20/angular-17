@@ -13,6 +13,10 @@ import { ReactiveFormExample2Component } from './AngularformExample/reactive-for
 import { ImpurePipeComponent } from './impure-pipe/impure-pipe.component';
 import { LifeCycleHookComponent } from './life-cycle-hook/life-cycle-hook.component';
 import { MyCounterComponentComponent } from './my-counter-component/my-counter-component.component';
+import { AngularTestingComponent } from './angular-testing/angular-testing.component';
+import { ParentContainerComponent } from './dynamic-component/parent-container/parent-container.component';
+import { DirectiveComponent } from './directive/directive/directive.component';
+import { SearchFeatureComponent } from './search-feature/search-feature.component';
 
 export const routes: Routes = [];
 
@@ -75,6 +79,22 @@ export const routeConfig: Routes = [
     {
       path:'ngrx-example',
       component:MyCounterComponentComponent
+    },
+    {
+      path:"angular-testing-example",
+      component: AngularTestingComponent
+    },
+    {
+      path:'dynamic-component-example',
+      component:ParentContainerComponent
+    },
+    {
+      path:'directive-example',
+      component:DirectiveComponent
+    },
+    {
+      path:'search-feature-example',
+      component:SearchFeatureComponent
     }
   ];
   

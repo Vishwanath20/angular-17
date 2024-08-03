@@ -8,16 +8,20 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class FilterPipe implements PipeTransform {
 
   transform(value: any, filterString:string) {
+    
+    
     if(value.lenth === 0 || filterString === ""){
       return value;
     }
     
-    const users = [];
+    var users = [];
     for(const user of value){
       if(user['name']===filterString){
         users.push(user);
+        console.log(users);  
       }
     }
+    
     return users;
   }
 

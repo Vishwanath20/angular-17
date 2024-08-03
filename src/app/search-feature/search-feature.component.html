@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <input type="text" class="form-control" [(ngModel)]="searchTerm" />
+            <!-- [(ngModel)]="searchData" -->
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-primary" (click)="onSearchData()">
+                Search
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div *ngFor="let hotel of displayedHotels" class="my-3">    
+               <!-- | filter:filteredString  -->
+                <div>Hotel Name: {{hotel.name}} </div>
+                <div>Joined Date: {{hotel.joinedDate|date:'fullDate' | uppercase}} </div> 
+            </div>
+        </div>
+    </div>
+
+</div>

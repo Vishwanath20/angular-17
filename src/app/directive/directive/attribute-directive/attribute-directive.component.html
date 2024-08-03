@@ -1,0 +1,32 @@
+
+<div style="border: 2px solid black; width: 70%; height: auto;">
+    <h1>attribute-directive Example!</h1>
+
+    <h3>ngClass Example</h3>
+    <div [ngClass]="{'class1': isClass1, 'class2': isClass2}">
+        This div's classes change dynamically.
+      </div>
+      
+      <button (click)="toggleClass1()">Toggle Class1</button>
+      <button (click)="toggleClass2()">Toggle Class2</button>
+
+
+    
+
+    <h3>ngStyle Example</h3>
+    
+    <div [ngStyle]="{'background-color': backgroundColorM, 'font-size.px': fontSize}">
+        This div's styles change dynamically.
+      </div>
+      
+      <button (click)="changeColor()">Change Background Color</button>
+      <button (click)="increaseFontSize()">Increase Font Size</button>
+
+
+    <h3>ngModal Example</h3>
+    
+    <input [(ngModel)]="name" placeholder="Enter your name">
+    <p>Hello, {{name}}!</p>
+
+
+</div>
