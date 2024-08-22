@@ -17,6 +17,8 @@ import { AngularTestingComponent } from './angular-testing/angular-testing.compo
 import { ParentContainerComponent } from './dynamic-component/parent-container/parent-container.component';
 import { DirectiveComponent } from './directive/directive/directive.component';
 import { SearchFeatureComponent } from './search-feature/search-feature.component';
+import { RxjsExampleComponent } from './rxjs-example/rxjs-example.component';
+import { FetchImageComponent } from './fetch-image/fetch-image.component';
 
 export const routes: Routes = [];
 
@@ -95,6 +97,14 @@ export const routeConfig: Routes = [
     {
       path:'search-feature-example',
       component:SearchFeatureComponent
+    },
+    {
+      path:'rxjs-example',
+      component:RxjsExampleComponent
+    },
+    {
+      path:'fetch-image',
+      component:FetchImageComponent
     }
   ];
   
