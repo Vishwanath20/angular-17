@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two columns */
+    gap: 10px; /* Adjust the gap between records as needed */
+  }
+  
+  .record {
+    /* Add styles for individual records here */
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  

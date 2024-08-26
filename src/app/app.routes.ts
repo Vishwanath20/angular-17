@@ -19,6 +19,7 @@ import { DirectiveComponent } from './directive/directive/directive.component';
 import { SearchFeatureComponent } from './search-feature/search-feature.component';
 import { RxjsExampleComponent } from './rxjs-example/rxjs-example.component';
 import { FetchImageComponent } from './fetch-image/fetch-image.component';
+import { DataFetchComponent } from './data-fetch/data-fetch.component';
 
 export const routes: Routes = [];
 
@@ -105,6 +106,10 @@ export const routeConfig: Routes = [
     {
       path:'fetch-image',
       component:FetchImageComponent
+    },
+    {
+      path:'data-fetch',
+      component:DataFetchComponent
     }
   ];
   
